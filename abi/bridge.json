@@ -1,0 +1,30 @@
+[
+    {
+        "inputs": [
+        {
+            "internalType": "uint16",
+            "name": "dstChainId",
+            "type": "uint16"
+        },
+        {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+        },
+        {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+        },
+        {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+        }
+            ],
+        "name": "transferToken",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    }
+]
