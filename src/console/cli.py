@@ -18,6 +18,7 @@ class Console:
     MODULES = (
         "🚰 Faucet",
         "🎢 Bridge BSC",
+        "🛒 Buy Sepolia",
         "🏞️  Bridge Sepolia",
         "🔄 Swap",
         "🔄 Auto-route",
@@ -26,6 +27,7 @@ class Console:
     MODULES_DATA = (
         ("🚰 Faucet", "faucet"),
         ("🎢 Bridge BSC", "bridge_bsc"),
+        ("🛒 Buy Sepolia", "buy_sepolia"),
         ("🏞️  Bridge Sepolia", "bridge_sepolia"),
         ("🔄 Swap", "swap"),
         ("🔄 Auto-route", "auto_route"),

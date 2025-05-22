@@ -65,6 +65,8 @@ class Config(BaseModel):
     tg_token: str = ""
     tg_id: str = ""
     send_stats_to_telegram: bool = False
+    arbitrum_rpc: str = ""
+    arbitrum_explorer: str = ""
     expchain_rpc: str = ""
     expchain_explorer: str = ""
     sepolia_rpc: str = ""

@@ -73,3 +73,8 @@ class BridgeBscContract(BaseContract):
 class SwapContract(BaseContract):
     address: str = "0xB4c6A1e8A14e9Fe74c88b06275b747145DD41206"
     abi_file: str = "swap.json"
+    
+@dataclass(slots=True)
+class TestnetBridgeContract(BaseContract):
+    address: str = "0xfcA99F4B5186D4bfBDbd2C542dcA2ecA4906BA45"
+    abi_file: str = "buy_sepolia.json"

@@ -1,0 +1,82 @@
+[
+    {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "amountIn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountOutMin",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint16",
+            "name": "dstChainId",
+            "type": "uint16"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "address payable",
+            "name": "refundAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "zroPaymentAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "adapterParams",
+            "type": "bytes"
+          }
+        ],
+        "name": "swapAndBridge",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+      "name": "estimateSendFee",
+      "type": "function",
+      "inputs": [
+          {
+              "name": "_dstChainId",
+              "type": "uint16"
+          },
+          {
+              "name": "_toAddress",
+              "type": "bytes"
+          },
+          {
+              "name": "_amount",
+              "type": "uint256"
+          },
+          {
+              "name": "_useZro",
+              "type": "bool"
+          },
+          {
+              "name": "_adapterParams",
+              "type": "bytes"
+          }
+      ],
+      "outputs": [
+          {
+              "name": "nativeFee",
+              "type": "uint256"
+          },
+          {
+              "name": "zroFee",
+              "type": "uint256"
+          }
+      ],
+      "stateMutability": "view"
+  }
+]

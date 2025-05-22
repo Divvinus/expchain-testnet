@@ -22,3 +22,8 @@ class EXPchainBot:
     async def process_swap(account: Account) -> tuple[bool, str]:
         async with SwapModule(account) as swap:
             return await swap.run()
+        
+    @staticmethod
+    async def process_buy_sepolia(account: Account) -> tuple[bool, str]:
+        async with BuySepoliaModule(account) as buy_sepolia:
+            return await buy_sepolia.run_buy_sepolia()

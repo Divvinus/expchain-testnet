@@ -28,6 +28,9 @@ SWAP_TOKENS = {
 SWAP_SLEEP_RANGE_BETWEEN = (10, 30)  # (min, max) in seconds
 RANDOM_PERCENTAGE_SWAP = (10, 35)  # (min, max) in percentage
 
+# --------------------------------- Buy Sepolia ---------------------------------
+AMOUNT_SWAP_ETH_TO_SEPOLIA = 0
+
 # -------------------------- Route --------------------------
 ROUTE_TASK = [
     'faucet',
@@ -39,6 +42,7 @@ ROUTE_TASK = [
 """
 Modules for route generation:
     - faucet                   Requesting tokens from the faucet
+    - buy_sepolia              Buy tETH
     - bridge_sepolia           Bridging tokens to Sepolia
     - bridge_bsc               Bridging tokens to BSC
     - swap                     Swapping tokensы
