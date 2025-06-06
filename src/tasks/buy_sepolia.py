@@ -96,7 +96,7 @@ class BuySepoliaModule(AsyncLogger, Wallet):
 
                 amount_in = self.to_wei(AMOUNT_SWAP_ETH_TO_SEPOLIA, "ether")
                 amount_out = await self.get_swap_quote(amount_in)
-                amount_out_min = int(amount_out * 0.95)
+                amount_out_min = int(amount_out * 0.98)
                 
                 tx_params = await self.build_transaction_params(
                     contract.functions.swapAndBridge(
